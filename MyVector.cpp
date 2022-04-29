@@ -16,7 +16,7 @@ Vector::~Vector()
     delete[] _data;
 };
 
-Vector::Vector(const Vector& other {
+Vector::Vector(const Vector& other) {
     _data = new Value [other._size];
     _capacity = other._size;
     insert(other._data, other._size, 0);
